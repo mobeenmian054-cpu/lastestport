@@ -4,10 +4,13 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-900 text-white text-xl fixed w-full z-50 shadow-md">
-      <div className="h-16 flex items-center px-6 max-w-7xl mx-auto justify-between">
+    <nav className="bg-gray-900 text-white fixed w-full z-50 shadow-md">
+      <div className="h-16 flex items-center justify-between px-4 md:px-6 max-w-7xl mx-auto">
+        
         {/* Logo */}
-        <p className="font-extrabold text-yellow-400">Mobeen Shahid</p>
+        <p className="font-extrabold text-yellow-400 flex-shrink-0 text-lg md:text-xl">
+          Mobeen Shahid
+        </p>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex justify-center gap-8 flex-1 text-white">
@@ -50,7 +53,7 @@ export const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-gray-900 flex flex-col px-6 py-4 gap-4 text-white">
+        <div className="md:hidden bg-gray-900 flex flex-col px-4 py-4 gap-4 text-white">
           <a href="#Hero" className="hover:text-yellow-300" onClick={() => setOpen(false)}>Hero</a>
           <a href="#Skills" className="hover:text-yellow-300" onClick={() => setOpen(false)}>Skills</a>
           <a href="#Education" className="hover:text-yellow-300" onClick={() => setOpen(false)}>Education</a>
