@@ -51,7 +51,8 @@ export const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+  
+  
       {open && (
         <div className="md:hidden bg-gray-900 flex flex-col px-4 py-4 gap-4 text-white">
           <a href="#Hero" className="hover:text-yellow-300" onClick={() => setOpen(false)}>Hero</a>
